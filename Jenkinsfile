@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Pull') {
                 agent {
                     docker {
                         image 'node:18-alpine'
@@ -11,7 +11,7 @@ pipeline {
                 }
             
             steps {
-                bat '''
+                sh '''
                     la -la 
                     node --version
                     npm --version
