@@ -10,7 +10,7 @@ pipeline {
                 }
             }
             steps {
-                echo 'Running Build Stage - placeholder for npm install and build'
+               sh 'npm install'
             }
         }
 
