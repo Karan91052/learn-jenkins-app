@@ -15,7 +15,7 @@ pipeline {
                     node --version
                     npm --version
                     rm -rf node_modules package-lock.json
-                    npm install -g
+                    npm install 
                     npm run build
                     ls -la
                 '''
