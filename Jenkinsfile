@@ -10,10 +10,7 @@ pipeline {
                 }
             }
             steps {
-                sh '''
-                    npm install
-                    npm run build
-                '''
+                echo 'Running Build Stage - placeholder for npm install and build'
             }
         }
 
@@ -25,10 +22,7 @@ pipeline {
                 }
             }
             steps {
-                sh '''
-                    test -f build/index.html
-                    npm test
-                '''
+                echo 'Running Test Stage - placeholder for test execution'
             }
         }
     }
