@@ -9,7 +9,14 @@ pipeline {
                     reuseNode true
                 }
             }
+            steps {
+                sh '''
+                    npm install
+                    npm run build
+                '''
+            }
         }
+
         stage('Test') {
             agent {
                 docker {
@@ -17,7 +24,6 @@ pipeline {
                     reuseNode true
                 }
             }
-
             steps {
                 sh '''
                     test -f build/index.html
