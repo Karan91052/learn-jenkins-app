@@ -9,7 +9,7 @@ pipeline {
                     reuseNode true
                 }
             }
-            steps {
+            /*steps {
                 sh '''
                     ls -la
                     node --version
@@ -19,7 +19,7 @@ pipeline {
                     npm run build
                     ls -la
                 '''
-            }
+            }*/
         }
 
         stage('Test') {
