@@ -10,7 +10,7 @@ pipeline {
                 }
             }
             steps {
-               sudo chown -R 114:118 "/.npm"
+               sh 'sudo chown -R 114:118 "/.npm"'
                sh 'npm install -g serve'
             }
         }
