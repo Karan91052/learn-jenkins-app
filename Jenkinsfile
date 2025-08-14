@@ -10,7 +10,7 @@ pipeline {
                 }
             }
             steps {
-               sh 'npm install serve'
+               sh 'brew install node'
             }
         }
 
